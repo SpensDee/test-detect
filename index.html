@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Play</title>
+  </head>
+  <body>
+    <script type="module">
+        import { getBrowser } from './js/detect.js';
+
+       document.body.innerHTML = `
+       <table>
+            <tr>
+                <td>Browser (Chrome or Edge): </td>
+                <td>${getBrowser()}</td>
+            </tr>
+        </table>
+       `
+    </script>
+  </body>   
+</html>
